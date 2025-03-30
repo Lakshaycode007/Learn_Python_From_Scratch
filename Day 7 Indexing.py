@@ -1,6 +1,8 @@
 # # Indexing = Accessing string's elements in sequence using []
 # #             [start: End :Steps]
 #
+from unittest import skipIf
+
 credit_number = "1235654265466841"
 # # fetch the first element.
 # # Index starts from 0 means first element from the string and so on.
@@ -36,4 +38,7 @@ credit_number = "1235654265466841"
 Excersice 1
 print only even digits from a given numerical string
 """
-
+num_str = input("Enter a numerical string: ")
+for i in num_str:
+    if int(i) % 2 == 0:
+        print(i, end="")
